@@ -1,0 +1,10 @@
+<%= form_for(@post) do |f|%>
+  <p>
+    <%= f.text_field :name%>
+  </p>
+  <p>
+    <%= f.text_area :body %>
+  </p>
+  <%= f.submit%>
+<% end %>
+<%= link_to 'All posts', posts_path%>
